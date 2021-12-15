@@ -1,8 +1,8 @@
 const nav = document.querySelector('.nav')
-window.addEventListener('scroll', fixNav)
+window.addEventListener('scroll', navFix)
 
-function fixNav() {
-  if (window.scrollY > nav.offsetHeight + 150) {
+function navFix() {
+  if (window.scrollY > nav.offsetHeight + 200) {
     nav.classList.add('active')
   } else {
     nav.classList.remove('active')
